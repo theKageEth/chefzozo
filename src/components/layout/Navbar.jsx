@@ -1,35 +1,55 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getSession, signOut } from "next-auth/react";
+
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [session, setSession] = useState(null);
+
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [navVisible, setNavVisible] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      setNavVisible(false);
+    } else {
+      // Scrolling up
+      setNavVisible(true);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
   useEffect(() => {
-    const fetchSession = async () => {
-      const session = await getSession();
-      setSession(session);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-    fetchSession();
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <nav className="bg-primary shadow-md backdrop-blur-lg  bg-opacity-20 fixed top-0 w-screen">
+    <nav
+      className={`z-10 fixed top-0 pt-2 md:pt-3 w-full transition-transform duration-300 bg-primary ${
+        navVisible ? "transform translate-y-0" : "transform -translate-y-full"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link href="/">
-              <div className="flex flex-row items-center gap-3 hover:scale-125 transition duration-300 ease-in-out">
+              <div className=" md:ml-10 flex flex-row items-center gap-3 hover:scale-110 transition duration-300 ease-in-out">
                 <Image src="/zozo.png" width={50} height={50} alt="Chef ZOZO" />
-                <p className="text-white hover:text-secondary font-bold text-2xl">
+                <p className="text-white hover:text-secondary font-bold text-xl ">
                   Chef ZOZO
                 </p>
               </div>

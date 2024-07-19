@@ -1,5 +1,3 @@
-import Scene from "@/components/threejs/Scene";
-
 const Menu = () => {
   return (
     <>

@@ -29,8 +29,8 @@ const Footer = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href={"https://Phantom3.dev"}
-              className=" mx-2 hover:text-content hover:scale-125 ease-in-out transition duration-1000 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center font-bold"
+              href="https://Phantom3.dev"
+              className=" z-0 mx-2 hover:text-content hover:scale-125 ease-in-out transition duration-1000 relative w-fit  after:block   after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center font-bold"
             >
               Phantom3
             </Link>
