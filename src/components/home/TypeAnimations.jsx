@@ -6,18 +6,15 @@ const TypeAnimations = () => {
   return (
     <TypeAnimation
       preRenderFirstString={true}
-      className="text-2xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent p-3 mx-3"
+      className="text-2xl font-bold bg-gradient-to-br from-secondary to-slate-500 bg-clip-text text-transparent p-3 mx-3"
       sequence={[
-        "W",
+        2000,
+        "To My Kitchen",
+        2000,
+        "Iraqi Dining Experience",
         1000,
-        "Welcome to Classic Pizza",
-        1000,
-        "Welcome to 3D Pizza",
-        1000,
-        "Welcome to Stylish Menu",
-        1000,
-        "Welcome to Exlusive Experience",
-        1000,
+        "Authentic Arabian Flavors",
+        2000,
       ]}
       wrapper="span"
       speed={50}

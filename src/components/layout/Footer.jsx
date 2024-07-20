@@ -5,7 +5,7 @@ import { FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-6 w-screen bg-opacity-50 ">
+    <footer className="bg-secondary p-5 w-screen bg-opacity-50 z-20 relative ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center">
           {/* Company Logo */}
@@ -13,9 +13,9 @@ const Footer = () => {
             href={"/"}
             className="hover:scale-125 transition duration-300 ease-in-out"
           >
-            <div className="mb-1">
+            <div className="mb-3">
               <Image
-                src="/zozo.png"
+                src="/zozox.png"
                 alt="Company Logo"
                 width={100}
                 height={100}
@@ -30,7 +30,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://Phantom3.dev"
-              className=" z-0 mx-2 hover:text-content hover:scale-125 ease-in-out transition duration-1000 relative w-fit  after:block   after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center font-bold"
+              className=" z-0 mx-2 hover:text-content hover:scale-125 ease-in-out transition duration-1000 relative w-fit  after:block   after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center font-bold"
             >
               Phantom3
             </Link>
@@ -42,14 +42,14 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex space-x-4 mt-2 mb-1 p-2 gap-5">
+          <div className="flex space-x-4 mt-2 mb-1 p-2 gap-5 z-30">
             <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/"
               className=" hover:text-content  hover:scale-150 ease-in-out transition duration-1000 "
             >
-              <RiTwitterXFill className="w-5 h-5" />
+              <FaInstagram className="w-6 h-6" />
             </Link>
             <Link
               target="_blank"
@@ -58,14 +58,6 @@ const Footer = () => {
               className=" hover:text-content hover:scale-150 ease-in-out transition duration-1000 "
             >
               <FaTiktok className="w-5 h-5" />
-            </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/"
-              className=" hover:text-content hover:scale-150 ease-in-out transition duration-1000 "
-            >
-              <FaInstagram className="w-5 h-6" />
             </Link>
           </div>
         </div>

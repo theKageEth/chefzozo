@@ -29,7 +29,7 @@ module.exports = {
 
           neutral: "#04010f",
 
-          "base-100": "#f5f5f4",
+          "base-100": "#defdff",
 
           info: "#00adff",
 
@@ -49,7 +49,7 @@ module.exports = {
 
           neutral: "#04010f",
 
-          "base-100": "#1B1A55",
+          "base-100": "#1b263b",
 
           info: "#00adff",
 
