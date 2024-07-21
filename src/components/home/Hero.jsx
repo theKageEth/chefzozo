@@ -166,7 +166,7 @@ const Hero = () => {
     <div data-theme={theme}>
       <div
         id="hero"
-        className=" relative min-h-[175dvh] flex flex-col lg:flex-row text-center justify-center items-center gap-5"
+        className=" relative min-h-[165dvh] flex flex-col lg:flex-row text-center justify-center items-center gap-5"
       >
         <div
           ref={overlay}
@@ -301,9 +301,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" min-h-[25dvh] flex flex-col gap-y-5 justify-center items-center">
-        <p className="  font-semibold text-3xl mt-5 p-3">Contact Me</p>
-        <div className="relative flex flex-row justify-center items-center align-bottom space-x-4 mx-3 mt-5 mb-5 p-3 gap-5 z-20 ">
+      <div className=" min-h-[30dvh] flex flex-col gap-y-1 justify-start  items-center">
+        <p className="  font-semibold text-3xl  p-3">Contact Me</p>
+        <div className="relative flex flex-row justify-center items-center align-bottom space-x-4 mx-3 mt-5 mb-5 p-3 gap-x-5 z-20 ">
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -328,7 +328,7 @@ const Hero = () => {
             viewBox="0 0 1200 120"
             preserveAspectRatio="none"
             width="100%"
-            height={100}
+            height={50}
           >
             <path
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"

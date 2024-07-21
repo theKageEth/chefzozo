@@ -4,6 +4,13 @@ import { useState, useEffect } from "react";
 import useStore from "@/utils/store";
 import Link from "next/link";
 import Image from "next/image";
+import { MdLightMode } from "react-icons/md";
+import {
+  BsMoonStarsFill,
+  BsFillVolumeDownFill,
+  BsFillVolumeMuteFill,
+  BsFillVolumeOffFill,
+} from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,13 +78,21 @@ const Navbar = () => {
           </div>
           <label className="swap swap-flip text-3xl lg:text-4xl absolute right-5 top-20 lg:right-24 ">
             <input type="checkbox" checked={isChecked} onChange={toggleTheme} />
-            <div className="swap-on">🌚</div>
-            <div className="swap-off">🌞</div>
+            <div className="swap-on text-primary">
+              <MdLightMode />
+            </div>
+            <div className="swap-off  text-primary">
+              <BsMoonStarsFill />
+            </div>
           </label>
-          <label className="swap swap-flip text-3xl lg:text-4xl absolute right-14 lg:right-36 top-20 ">
+          <label className="text-secondary swap  text-3xl lg:text-4xl absolute right-14 lg:right-36 top-20 ">
             <input type="checkbox" checked={isMuted} onChange={toggleMute} />
-            <div className="swap-on">🔇</div>
-            <div className="swap-off">🔉</div>
+            <div className="swap-on">
+              <BsFillVolumeOffFill />
+            </div>
+            <div className="swap-off">
+              <BsFillVolumeDownFill />
+            </div>
           </label>
           <div className="hidden md:block mr-20">
             <div className="ml-10 flex justify-start items-center space-x-4 ">
