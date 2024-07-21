@@ -69,12 +69,12 @@ const Navbar = () => {
               </div>
             </Link>
           </div>
-          <label className="swap swap-flip text-2xl lg:text-3xl absolute right-5 top-20 ">
+          <label className="swap swap-flip text-3xl lg:text-4xl absolute right-5 top-20 lg:right-24 ">
             <input type="checkbox" checked={isChecked} onChange={toggleTheme} />
             <div className="swap-on">🌚</div>
             <div className="swap-off">🌞</div>
           </label>
-          <label className="swap swap-flip text-2xl lg:text-3xl absolute right-14 top-20 ">
+          <label className="swap swap-flip text-3xl lg:text-4xl absolute right-14 lg:right-36 top-20 ">
             <input type="checkbox" checked={isMuted} onChange={toggleMute} />
             <div className="swap-on">🔇</div>
             <div className="swap-off">🔉</div>

@@ -5,8 +5,8 @@ import Footer from "@/components/layout/Footer";
 const inter = Crafty_Girls({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Mr.UK",
-  description: "Mr.UK Pizzeria Pasta",
+  title: "Chef ZOZO",
+  description: "Authentic Iraqi and Middle Eastern Food in Birmingham, UK",
 };
 
 export default function RootLayout({ children }) {

@@ -8,21 +8,21 @@ const menuItems = [
     title: "Hala Kashkash",
     description: "A delicious dessert with layers of cream and crunch.",
     imageUrl: "/food/kash.jpg",
-    price: "£24",
+    price: "£25",
   },
   {
     title: "Cinnamon Balls",
     description:
       "Freshly baked cinnamon, coated with a special sweet sauce and Nutella chocolate.",
     imageUrl: "/food/cina.jpg",
-    price: "£17",
+    price: "£25",
   },
   {
     title: "Kunafa",
     description:
       "Crunchy, buttery dessert made with shredded pastry layers enclosing a creamy soft milk pudding.",
     imageUrl: "/food/kun.jpg",
-    price: "£25",
+    price: "£20",
   },
 ];
 

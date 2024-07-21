@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { RiTwitterXFill } from "react-icons/ri";
 import { FaTiktok, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary p-5 w-screen bg-opacity-50 z-20 relative ">
+    <footer className="bg-secondary p-5 w-screen  z-20 relative min-h-[30dvh] ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center">
           {/* Company Logo */}
@@ -46,7 +45,7 @@ const Footer = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://twitter.com/"
+              href="https://www.instagram.com/zaenbnabil/"
               className=" hover:text-content  hover:scale-150 ease-in-out transition duration-1000 "
             >
               <FaInstagram className="w-6 h-6" />
@@ -54,7 +53,7 @@ const Footer = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.tiktok.com/"
+              href="https://www.tiktok.com/@zaenb_nabil"
               className=" hover:text-content hover:scale-150 ease-in-out transition duration-1000 "
             >
               <FaTiktok className="w-5 h-5" />

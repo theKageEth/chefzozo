@@ -4,7 +4,7 @@ import FoodCard from "@/components/FoodCard";
 
 const menuItems = [
   {
-    title: "Dolma",
+    title: "Iraqi Dolma",
     description:
       "Delicious homemade Iraqi Dolma with fresh ingredients and a savory filling.",
     imageUrl: "/food/1.jpg",
@@ -21,7 +21,7 @@ const menuItems = [
     description:
       "Freshly fried fish over rice with a rich blend of savory spices.",
     imageUrl: "/food/3.jpg",
-    price: "£17",
+    price: "£20",
   },
   {
     title: "Mutabbaq Prawns",
@@ -75,7 +75,7 @@ const menuItems = [
     description:
       "Tender full chicken and flavorful Kabsa rice with spices and fresh herbs.",
     imageUrl: "/food/14.jpg",
-    price: "£25",
+    price: "£26",
   },
 
   {
@@ -83,7 +83,7 @@ const menuItems = [
     description:
       "Creamy, delicious and cheesy pasta baked in bechamel sauce with minced meat topped with cheese.",
     imageUrl: "/food/11.jpg",
-    price: "£38",
+    price: "£26",
   },
   {
     title: "Moussaka",
@@ -93,9 +93,9 @@ const menuItems = [
     price: "£29",
   },
   {
-    title: "Vegetable Bechamel Pasta Bake",
+    title: "Chicken Vegetable Bechamel Pasta Bake",
     description:
-      "Creamy, delicious and cheesy pasta baked in bechamel sauce with vegetables topped with cheese.",
+      "Creamy, delicious and cheesy pasta baked in bechamel sauce with chicken and vegetables topped with cheese.",
     imageUrl: "/food/13.jpg",
     price: "£26",
   },

@@ -5,7 +5,7 @@ const error = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <Image
-        src="/zozo.png"
+        src="/zozox.png"
         width={80}
         height={80}
         priority={true}
